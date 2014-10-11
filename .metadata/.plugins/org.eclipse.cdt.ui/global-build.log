@@ -1,0 +1,30 @@
+10:43:46 **** Build of configuration Debug for project 429DiscoveryBsp ****
+make -j8 all 
+'Building file: ../src/log.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -l"C:\Program Files (x86)\GNU Tools ARM Embedded\4.8 2014q3\lib\gcc\arm-none-eabi\4.8.4\libgcc.a" -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_ITM -DSTM32F429xx -DUSE_HAL_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f4-hal" -std=gnu11 -MMD -MP -MF"src/log.d" -MT"src/log.o" -c -o "src/log.o" "../src/log.c"
+'Finished building: ../src/log.c'
+' '
+'Building target: 429DiscoveryBsp.elf'
+'Invoking: Cross ARM C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"429DiscoveryBsp.map" --specs=nano.specs -o "429DiscoveryBsp.elf"  ./system/src/stm32f4-hal/stm32f4xx_hal.o ./system/src/stm32f4-hal/stm32f4xx_hal_adc.o ./system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_can.o ./system/src/stm32f4-hal/stm32f4xx_hal_cortex.o ./system/src/stm32f4-hal/stm32f4xx_hal_crc.o ./system/src/stm32f4-hal/stm32f4xx_hal_cryp.o ./system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dac.o ./system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_dcmi.o ./system/src/stm32f4-hal/stm32f4xx_hal_dma.o ./system/src/stm32f4-hal/stm32f4xx_hal_dma2d.o ./system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_eth.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.o ./system/src/stm32f4-hal/stm32f4xx_hal_gpio.o ./system/src/stm32f4-hal/stm32f4xx_hal_hash.o ./system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_hcd.o ./system/src/stm32f4-hal/stm32f4xx_hal_i2c.o ./system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_i2s.o ./system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_irda.o ./system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o ./system/src/stm32f4-hal/stm32f4xx_hal_ltdc.o ./system/src/stm32f4-hal/stm32f4xx_hal_msp_template.o ./system/src/stm32f4-hal/stm32f4xx_hal_nand.o ./system/src/stm32f4-hal/stm32f4xx_hal_nor.o ./system/src/stm32f4-hal/stm32f4xx_hal_pccard.o ./system/src/stm32f4-hal/stm32f4xx_hal_pcd.o ./system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr.o ./system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc.o ./system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_rng.o ./system/src/stm32f4-hal/stm32f4xx_hal_rtc.o ./system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_sai.o ./system/src/stm32f4-hal/stm32f4xx_hal_sd.o ./system/src/stm32f4-hal/stm32f4xx_hal_sdram.o ./system/src/stm32f4-hal/stm32f4xx_hal_smartcard.o ./system/src/stm32f4-hal/stm32f4xx_hal_spi.o ./system/src/stm32f4-hal/stm32f4xx_hal_sram.o ./system/src/stm32f4-hal/stm32f4xx_hal_tim.o ./system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.o ./system/src/stm32f4-hal/stm32f4xx_hal_uart.o ./system/src/stm32f4-hal/stm32f4xx_hal_usart.o ./system/src/stm32f4-hal/stm32f4xx_hal_wwdg.o ./system/src/stm32f4-hal/stm32f4xx_ll_fmc.o ./system/src/stm32f4-hal/stm32f4xx_ll_fsmc.o ./system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.o ./system/src/stm32f4-hal/stm32f4xx_ll_usb.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/_write.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f4xx.o ./system/src/cmsis/vectors_stm32f4xx.o  ./src/_initialize_hardware.o ./src/font12.o ./src/font16.o ./src/font20.o ./src/font24.o ./src/font8.o ./src/ili9341.o ./src/l3gd20.o ./src/lcd.o ./src/lcd_log.o ./src/log.o ./src/main.o ./src/mems.o ./src/stm32f429i_discovery.o ./src/stm32f429i_discovery_gyroscope.o ./src/stm32f429i_discovery_io.o ./src/stm32f429i_discovery_lcd.o ./src/stm32f429i_discovery_sdram.o ./src/stm32f429i_discovery_ts.o ./src/stm32f4xx_it.o ./src/stmpe811.o ./src/touchscreen.o ./src/ts_calibration.o   
+'Finished building target: 429DiscoveryBsp.elf'
+' '
+'Invoking: Cross ARM GNU Create Flash Image'
+arm-none-eabi-objcopy -O ihex "429DiscoveryBsp.elf"  "429DiscoveryBsp.hex"
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "429DiscoveryBsp.elf"
+   text	   data	    bss	    dec	    hex	filename
+  77545	    560	  16616	  94721	  17201	429DiscoveryBsp.elf
+'Finished building: 429DiscoveryBsp.siz'
+'Finished building: 429DiscoveryBsp.hex'
+' '
+' '
+10:49:30 **** Incremental Build of configuration Debug for project 429DiscoveryBsp ****
+make -j8 all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "429DiscoveryBsp.elf"
+   text	   data	    bss	    dec	    hex	filename
+  77545	    560	  16616	  94721	  17201	429DiscoveryBsp.elf
+'Finished building: 429DiscoveryBsp.siz'
+' '

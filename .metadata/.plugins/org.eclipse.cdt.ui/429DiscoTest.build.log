@@ -1,0 +1,11 @@
+21:59:48 **** Incremental Build of configuration Debug for project 429DiscoTest ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "429DiscoTest.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8149	    120	    424	   8693	   21f5	429DiscoTest.elf
+'Finished building: 429DiscoTest.siz'
+' '
+
+21:59:48 Build Finished (took 468ms)
+

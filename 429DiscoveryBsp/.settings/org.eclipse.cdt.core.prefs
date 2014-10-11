@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.998159118/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.998159118/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.998159118/PATH/value=C\:\\Program Files (x86)\\GNU Tools ARM Embedded\\4.8 2014q3\\bin;C\:\\Program Files (x86)\\AMD APP\\bin\\x86_64;C\:\\Program Files (x86)\\AMD APP\\bin\\x86;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C\:\\Program Files\\Diskeeper Corporation\\ExpressCache\\;${PATH};C\:\\Program Files (x86)\\GnuWin32\\bin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.998159118/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.998159118/appendContributed=true

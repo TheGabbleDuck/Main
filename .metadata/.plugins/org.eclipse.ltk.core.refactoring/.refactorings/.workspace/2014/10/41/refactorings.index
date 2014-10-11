@@ -1,0 +1,7 @@
+1412977570933	Delete resource '429BspTest/src/eeprom.c'
+1412977590183	Delete resource '429BspTest/include/stm32f429i_discovery_eeprom.h'
+1412978271395	Delete resource '429BspTest/src/stm32f429i_discovery_eeprom.c'
+1412979013951	Delete resource '429BspTest/src/system_stm32f4xx.c'
+1412980016247	Delete resource '429BspTest/system/include/stm32f4-hal/stm32f4xx_hal_conf_template.h'
+1413018516883	Delete resource '429DiscoveryBsp/system/src/stm32f4-hal/README_HAL.txt'
+1413021437461	Delete resource '429DiscoTest'

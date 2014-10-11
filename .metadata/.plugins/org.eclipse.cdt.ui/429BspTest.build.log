@@ -1,0 +1,298 @@
+00:42:49 **** Incremental Build of configuration Debug for project 429BspTest ****
+make all 
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal.o" "../system/src/stm32f4-hal/stm32f4xx_hal.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_adc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_adc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_adc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_adc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_adc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_adc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_adc_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_can.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_can.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_can.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_can.o" "../system/src/stm32f4-hal/stm32f4xx_hal_can.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_can.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_cortex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_cortex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_cortex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_cortex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_cortex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_cortex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_crc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_crc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_crc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_crc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_crc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_crc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_cryp.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_cryp.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_cryp.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_cryp.o" "../system/src/stm32f4-hal/stm32f4xx_hal_cryp.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_cryp.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_cryp_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dac.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dac.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dac.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dac.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dac.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dac.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dac_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dcmi.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dcmi.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dcmi.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dcmi.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dcmi.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dcmi.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dma.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dma.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dma.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dma.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dma.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dma.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dma2d.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dma2d.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dma2d.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dma2d.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dma2d.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dma2d.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_dma_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_eth.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_eth.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_eth.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_eth.o" "../system/src/stm32f4-hal/stm32f4xx_hal_eth.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_eth.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_flash.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_flash.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_flash.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_flash.o" "../system/src/stm32f4-hal/stm32f4xx_hal_flash.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_flash.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_flash_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_flash_ramfunc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_gpio.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_gpio.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_gpio.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_gpio.o" "../system/src/stm32f4-hal/stm32f4xx_hal_gpio.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_gpio.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_hash.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_hash.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_hash.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_hash.o" "../system/src/stm32f4-hal/stm32f4xx_hal_hash.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_hash.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_hash_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_hcd.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_hcd.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_hcd.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_hcd.o" "../system/src/stm32f4-hal/stm32f4xx_hal_hcd.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_hcd.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_i2c.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_i2c.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_i2c.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_i2c.o" "../system/src/stm32f4-hal/stm32f4xx_hal_i2c.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_i2c.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_i2c_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_i2s.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_i2s.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_i2s.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_i2s.o" "../system/src/stm32f4-hal/stm32f4xx_hal_i2s.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_i2s.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_i2s_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_irda.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_irda.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_irda.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_irda.o" "../system/src/stm32f4-hal/stm32f4xx_hal_irda.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_irda.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_iwdg.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_iwdg.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_iwdg.o" "../system/src/stm32f4-hal/stm32f4xx_hal_iwdg.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_iwdg.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_ltdc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_ltdc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_ltdc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_ltdc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_ltdc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_ltdc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_msp_template.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_msp_template.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_msp_template.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_msp_template.o" "../system/src/stm32f4-hal/stm32f4xx_hal_msp_template.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_msp_template.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_nand.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_nand.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_nand.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_nand.o" "../system/src/stm32f4-hal/stm32f4xx_hal_nand.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_nand.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_nor.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_nor.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_nor.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_nor.o" "../system/src/stm32f4-hal/stm32f4xx_hal_nor.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_nor.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_pccard.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_pccard.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_pccard.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_pccard.o" "../system/src/stm32f4-hal/stm32f4xx_hal_pccard.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_pccard.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_pcd.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_pcd.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_pcd.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_pcd.o" "../system/src/stm32f4-hal/stm32f4xx_hal_pcd.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_pcd.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_pcd_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_pwr.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_pwr.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_pwr.o" "../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_pwr.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_pwr_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_rcc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_rcc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_rcc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_rcc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_rcc_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_rng.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_rng.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_rng.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_rng.o" "../system/src/stm32f4-hal/stm32f4xx_hal_rng.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_rng.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_rtc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_rtc.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_rtc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_rtc.o" "../system/src/stm32f4-hal/stm32f4xx_hal_rtc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_rtc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_rtc_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_sai.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_sai.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_sai.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_sai.o" "../system/src/stm32f4-hal/stm32f4xx_hal_sai.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_sai.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_sd.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_sd.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_sd.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_sd.o" "../system/src/stm32f4-hal/stm32f4xx_hal_sd.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_sd.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_sdram.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_sdram.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_sdram.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_sdram.o" "../system/src/stm32f4-hal/stm32f4xx_hal_sdram.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_sdram.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_smartcard.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_smartcard.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_smartcard.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_smartcard.o" "../system/src/stm32f4-hal/stm32f4xx_hal_smartcard.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_smartcard.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_spi.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_spi.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_spi.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_spi.o" "../system/src/stm32f4-hal/stm32f4xx_hal_spi.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_spi.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_sram.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_sram.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_sram.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_sram.o" "../system/src/stm32f4-hal/stm32f4xx_hal_sram.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_sram.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_tim.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_tim.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_tim.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_tim.o" "../system/src/stm32f4-hal/stm32f4xx_hal_tim.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_tim.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.o" "../system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_tim_ex.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_uart.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_uart.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_uart.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_uart.o" "../system/src/stm32f4-hal/stm32f4xx_hal_uart.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_uart.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_usart.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_usart.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_usart.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_usart.o" "../system/src/stm32f4-hal/stm32f4xx_hal_usart.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_usart.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_hal_wwdg.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_hal_wwdg.d" -MT"system/src/stm32f4-hal/stm32f4xx_hal_wwdg.o" -c -o "system/src/stm32f4-hal/stm32f4xx_hal_wwdg.o" "../system/src/stm32f4-hal/stm32f4xx_hal_wwdg.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_hal_wwdg.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_ll_fmc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_ll_fmc.d" -MT"system/src/stm32f4-hal/stm32f4xx_ll_fmc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_ll_fmc.o" "../system/src/stm32f4-hal/stm32f4xx_ll_fmc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_ll_fmc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_ll_fsmc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_ll_fsmc.d" -MT"system/src/stm32f4-hal/stm32f4xx_ll_fsmc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_ll_fsmc.o" "../system/src/stm32f4-hal/stm32f4xx_ll_fsmc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_ll_fsmc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.d" -MT"system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.o" -c -o "system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.o" "../system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_ll_sdmmc.c'
+' '
+'Building file: ../system/src/stm32f4-hal/stm32f4xx_ll_usb.c'
+'Invoking: Cross ARM C Compiler'
+arm-none-eabi-gcc -g -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -DDEBUG -DHSE_VALUE=8000000 -DOS_USE_TRACE_SEMIHOSTING_STDOUT -DSTM32F429xx -DTRACE -DUSE_FULL_ASSERT -DUSE_HAL_DRIVER -I"D:\GitHub\Main\429BspTest\include" -I"D:\GitHub\Main\429BspTest\system\include" -I"D:\GitHub\Main\429BspTest\system\include\cmsis" -I"D:\GitHub\Main\429BspTest\system\include\stm32f4-hal" -I"D:\GitHub\Main\429BspTest\system\include\diag" -std=gnu11 -MMD -MP -MF"system/src/stm32f4-hal/stm32f4xx_ll_usb.d" -MT"system/src/stm32f4-hal/stm32f4xx_ll_usb.o" -c -o "system/src/stm32f4-hal/stm32f4xx_ll_usb.o" "../system/src/stm32f4-hal/stm32f4xx_ll_usb.c"
+'Finished building: ../system/src/stm32f4-hal/stm32f4xx_ll_usb.c'
+' '
+'Building file: ../system/src/newlib/_cxx.cpp'
+'Invoking: Cross ARM C++ Compiler'
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -std=gnu++11 -fabi-version=0 -MMD -MP -MF"system/src/newlib/_cxx.d" -MT"system/src/newlib/_cxx.o" -c -o "system/src/newlib/_cxx.o" "../system/src/newlib/_cxx.cpp"
+../system/src/newlib/_cxx.cpp:15:24: fatal error: diag/Trace.h: No such file or directory
+ #include "diag/Trace.h"
+                        ^
+compilation terminated.
+make: *** [system/src/newlib/_cxx.o] Error 1
+
+00:43:10 Build Finished (took 21s.309ms)
+
