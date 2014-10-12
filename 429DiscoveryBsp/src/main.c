@@ -108,6 +108,9 @@ int main(void)
   /* Initialize the LCD */
   BSP_LCD_Init();
 
+  //	Init touch screen
+  BSP_TS_Init(LcdDrv->GetLcdPixelWidth, LcdDrv->GetLcdPixelHeight);
+
   /* Initialise the LCD Layers */
   BSP_LCD_LayerDefaultInit(1, LCD_FRAME_BUFFER);
 

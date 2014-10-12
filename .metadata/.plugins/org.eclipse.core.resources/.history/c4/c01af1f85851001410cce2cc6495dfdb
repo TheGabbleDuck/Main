@@ -1,0 +1,80 @@
+//
+// This file is part of the GNU ARM Eclipse distribution.
+// Copyright (c) 2014 Liviu Ionescu.
+//
+
+// ----------------------------------------------------------------------------
+
+#include <stdio.h>
+#include "diag/Trace.h"
+#include "stm32f429i_discovery.h"
+#include "stm32f429i_discovery_lcd.h"
+#include "lcd.h"
+#include "ts.h"
+
+volatile uint32_t uiSysTicks = 0;
+
+// ----------------------------------------------------------------------------
+//
+// Standalone STM32F4 empty sample (trace via NONE).
+//
+// Trace support is enabled by adding the TRACE macro definition.
+// By default the trace messages are forwarded to the NONE output,
+// but can be rerouted to any device or completely suppressed, by
+// changing the definitions required in system/src/diag/trace_impl.c
+// (currently OS_USE_TRACE_ITM, OS_USE_TRACE_SEMIHOSTING_DEBUG/_STDOUT).
+//
+
+//	HAL defined 1ms tick interrupt
+void SysTick_Handler(void) {
+	NVIC_ClearPendingIRQ(SysTick_IRQn);
+	HAL_IncTick();
+	uiSysTicks++;
+}
+
+// ----- main() ---------------------------------------------------------------
+
+// Sample pragmas to cope with warnings. Please note the related line at
+// the end of this function, used to pop the compiler diagnostics status.
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wmissing-declarations"
+#pragma GCC diagnostic ignored "-Wreturn-type"
+
+int main(int argc, char* argv[]) {
+	// At this stage the system clock should have already been configured
+	// at high speed.
+	HAL_Init();
+
+	/* Configure LED3 and LED4 */
+	BSP_LED_Init(LED3);
+	BSP_LED_Init(LED4);
+
+	/* Configure the system clock to 180 Mhz */
+	//SystemClock_Config();
+	/* Configure the User Button in EXTI Mode */
+	BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_EXTI);
+
+	/*##-1- Initialize the LCD #################################################*/
+	/* Initialize the LCD */
+	BSP_LCD_Init();
+
+	/* Initialise the LCD Layers */
+	//	Active layer appears to be layer 0...
+	BSP_LCD_LayerDefaultInit(0, LCD_FRAME_BUFFER);
+	/* Clear the LCD */
+	BSP_LCD_Clear(LCD_COLOR_RED);
+
+	//	Init touch screen
+	BSP_TS_Init(LcdDrv->GetLcdPixelWidth, LcdDrv->GetLcdPixelHeight);
+	Touchscreen_Calibration();
+
+	// Infinite loop
+	while (1) {
+		// Add your code here.
+	}
+}
+
+#pragma GCC diagnostic pop
+
+// ----------------------------------------------------------------------------

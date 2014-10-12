@@ -1,0 +1,155 @@
+//
+// This file is part of the GNU ARM Eclipse distribution.
+// Copyright (c) 2014 Liviu Ionescu.
+//
+
+// ----------------------------------------------------------------------------
+
+#include <stdio.h>
+#include "diag/Trace.h"
+#include "stdbool.h"
+
+#include "main.h"
+#include "stm32f4xx.h"
+#include "stm32f429i_discovery.h"
+#include "stm32f429i_discovery_lcd.h"
+#include "stm32f429i_discovery_ts.h"
+
+volatile uint32_t uiSysTicks = 0;
+volatile uint32_t uiTsTickCount = 0;
+
+extern LCD_DrvTypeDef *LcdDrv;
+TS_StateTypeDef TsPresentState;
+TS_StateTypeDef* TsState;
+bool boDisplayTouch = false;
+bool boDisplayInitComplete = false;
+
+uint8_t testMessage[] = { "Hello" };
+unsigned char xValArray[] = {"X value:    "};
+unsigned char yValArray[] = {"Y value:    "};
+uint8_t *ui8ReadPtr, *ui8WritePtr;
+
+unsigned char* hexToAscii(uint16_t numberIn){
+	static unsigned char asciiArray[3];
+
+	asciiArray[0] = 0x30;
+	asciiArray[1] = 0x30;
+	asciiArray[2] = 0x30;
+
+	while(numberIn > 99){
+		asciiArray[0]++;
+		numberIn -= 100;
+	}
+	while(numberIn > 9){
+		asciiArray[1]++;
+		numberIn -= 10;
+	}
+	while(numberIn > 0){
+		asciiArray[1]++;
+		numberIn -= 1;
+	}
+	return &asciiArray[0];
+}
+
+// ----------------------------------------------------------------------------
+//
+// Standalone STM32F4 empty sample (trace via NONE).
+//
+// Trace support is enabled by adding the TRACE macro definition.
+// By default the trace messages are forwarded to the NONE output,
+// but can be rerouted to any device or completely suppressed, by
+// changing the definitions required in system/src/diag/trace_impl.c
+// (currently OS_USE_TRACE_ITM, OS_USE_TRACE_SEMIHOSTING_DEBUG/_STDOUT).
+//
+
+//	HAL defined 1ms tick interrupt
+void SysTick_Handler(void) {
+	NVIC_ClearPendingIRQ(SysTick_IRQn);
+	HAL_IncTick();
+	uiSysTicks++;
+	//	Touchscreen check every 10ms
+	if ((uiSysTicks > (uiTsTickCount + 10))
+			&& (boDisplayInitComplete == true)) {
+		BSP_TS_GetState(TsState);
+		if (TsState->TouchDetected) {
+			TsPresentState.X = TsState->X;
+			TsPresentState.Y = TsState->Y;
+		}
+		uiTsTickCount = uiSysTicks;
+	}
+}
+
+// ----- main() ---------------------------------------------------------------
+
+// Sample pragmas to cope with warnings. Please note the related line at
+// the end of this function, used to pop the compiler diagnostics status.
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wmissing-declarations"
+#pragma GCC diagnostic ignored "-Wreturn-type"
+
+int main(int argc, char* argv[]) {
+
+	unsigned int i;
+	// At this stage the system clock should have already been configured
+	// at high speed.
+	HAL_Init();
+
+	/* Configure LED3 and LED4 */
+	BSP_LED_Init(LED3);
+	BSP_LED_Init(LED4);
+
+	/* Configure the system clock to 180 Mhz */
+	//SystemClock_Config();
+	/* Configure the User Button in EXTI Mode */
+	BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_EXTI);
+
+	/*##-1- Initialize the LCD #################################################*/
+	/* Initialize the LCD */
+	BSP_LCD_Init();
+
+	/* Initialise the LCD Layers */
+	//	Active layer appears to be layer 0...
+	BSP_LCD_LayerDefaultInit(0, LCD_FRAME_BUFFER);
+
+	/* Clear the LCD */
+	//	Just for testing. Worked.
+	//BSP_LCD_Clear(LCD_COLOR_RED);
+	//	Init touch screen
+	BSP_TS_Init(BSP_LCD_GetXSize(), BSP_LCD_GetYSize());
+	BSP_TS_ITConfig();
+	Touchscreen_Calibration();
+
+	BSP_LCD_Clear(LCD_COLOR_WHITE);
+
+	BSP_LCD_SetTextColor(LCD_COLOR_WHITE);
+	BSP_LCD_SetBackColor(LCD_COLOR_BLUE);
+	BSP_LCD_SetFont(&Font12);
+
+	//	CENTER_MODE
+	//	RIGHT_MODE
+	//	LEFT_MODE
+	BSP_LCD_DisplayStringAt(0, 12, (uint8_t*) "Hello!", CENTER_MODE);
+
+	//	Everything done
+	boDisplayInitComplete = true;
+
+	// Infinite loop
+	while (1) {
+		// Add your code here.
+		if (boDisplayTouch) {
+			//	Convert x and y values to ascii and display at array 8,9,10
+			ui8ReadPtr = hexToAscii(TsPresentState.X);
+			ui8WritePtr = &xValArray[8];
+			for(i=0;i<3;i++){
+				*(ui8WritePtr++) = *(ui8ReadPtr++);
+			}
+			BSP_LCD_DisplayStringAt(0, 24, (uint8_t*) &xValArray[0], CENTER_MODE);
+			BSP_LCD_DisplayStringAt(0, 36, (uint8_t*) &yValArray[0], CENTER_MODE);
+		}
+	}
+}
+
+#pragma GCC diagnostic pop
+
+// ----------------------------------------------------------------------------

@@ -7,9 +7,50 @@
 
 #include <stdio.h>
 #include "diag/Trace.h"
+#include "stdbool.h"
+
+#include "main.h"
+#include "stm32f4xx.h"
+#include "stm32f429i_discovery.h"
 #include "stm32f429i_discovery_lcd.h"
+#include "stm32f429i_discovery_ts.h"
 
 volatile uint32_t uiSysTicks = 0;
+volatile uint32_t uiTsTickCount = 0;
+
+//extern LCD_DrvTypeDef *LcdDrv;
+TS_StateTypeDef TsPresentState;
+TS_StateTypeDef TsState;
+TS_DrvTypeDef TsDrv;
+bool boDisplayTouch = false;
+bool boDisplayInitComplete = false;
+
+uint8_t testMessage[] = { "Hello" };
+unsigned char xValArray[] = {"X value:    "};
+unsigned char yValArray[] = {"Y value:    "};
+uint8_t *ui8ReadPtr, *ui8WritePtr;
+
+unsigned char* hexToAscii(uint16_t numberIn){
+	static unsigned char asciiArray[3];
+
+	asciiArray[0] = 0x30;
+	asciiArray[1] = 0x30;
+	asciiArray[2] = 0x30;
+
+	while(numberIn > 99){
+		asciiArray[0]++;
+		numberIn -= 100;
+	}
+	while(numberIn > 9){
+		asciiArray[1]++;
+		numberIn -= 10;
+	}
+	while(numberIn > 0){
+		asciiArray[2]++;
+		numberIn -= 1;
+	}
+	return &asciiArray[0];
+}
 
 // ----------------------------------------------------------------------------
 //
@@ -23,10 +64,22 @@ volatile uint32_t uiSysTicks = 0;
 //
 
 //	HAL defined 1ms tick interrupt
-void SysTick_Handler(void){
+void SysTick_Handler(void) {
 	NVIC_ClearPendingIRQ(SysTick_IRQn);
 	HAL_IncTick();
 	uiSysTicks++;
+	//	Touchscreen check every 10ms if everything is initialised
+	if ((uiSysTicks > (uiTsTickCount + 10)) && (boDisplayInitComplete == true)) {
+		//	Update
+		BSP_TS_GetState(&TsState);
+		//	If touched
+		if (TsState.TouchDetected) {
+			TsPresentState.X = TsState.X;
+			TsPresentState.Y = TsState.Y;
+			boDisplayTouch = true;
+		}
+		uiTsTickCount = uiSysTicks;
+	}
 }
 
 // ----- main() ---------------------------------------------------------------
@@ -39,6 +92,8 @@ void SysTick_Handler(void){
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
 int main(int argc, char* argv[]) {
+
+	unsigned int i;
 	// At this stage the system clock should have already been configured
 	// at high speed.
 	HAL_Init();
@@ -49,7 +104,6 @@ int main(int argc, char* argv[]) {
 
 	/* Configure the system clock to 180 Mhz */
 	//SystemClock_Config();
-
 	/* Configure the User Button in EXTI Mode */
 	BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_EXTI);
 
@@ -60,12 +114,54 @@ int main(int argc, char* argv[]) {
 	/* Initialise the LCD Layers */
 	//	Active layer appears to be layer 0...
 	BSP_LCD_LayerDefaultInit(0, LCD_FRAME_BUFFER);
+
 	/* Clear the LCD */
-	BSP_LCD_Clear(LCD_COLOR_RED);
+	//	Just for testing. Worked.
+	//BSP_LCD_Clear(LCD_COLOR_RED);
+	//	Init touch screen
+	BSP_TS_Init(BSP_LCD_GetXSize(), BSP_LCD_GetYSize());
+	//BSP_TS_ITGetStatus();
+	//BSP_TS_ITConfig();
+	Touchscreen_Calibration();
+
+	BSP_LCD_Clear(LCD_COLOR_WHITE);
+
+	BSP_LCD_SetTextColor(LCD_COLOR_WHITE);
+	BSP_LCD_SetBackColor(LCD_COLOR_BLUE);
+	BSP_LCD_SetFont(&Font12);
+
+	//	CENTER_MODE
+	//	RIGHT_MODE
+	//	LEFT_MODE
+	BSP_LCD_DisplayStringAt(0, 12, (uint8_t*) "Hello!", CENTER_MODE);
+
+	//	Everything done
+	boDisplayInitComplete = true;
 
 	// Infinite loop
 	while (1) {
 		// Add your code here.
+		if (boDisplayTouch) {
+
+			//	Convert x value and display
+			ui8ReadPtr = hexToAscii(TsPresentState.X);
+			ui8WritePtr = &xValArray[9];
+			for(i=0;i<3;i++){
+				*(ui8WritePtr++) = *(ui8ReadPtr++);
+			}
+
+			//	Convert Y value
+			ui8ReadPtr = hexToAscii(TsPresentState.Y);
+			ui8WritePtr = &yValArray[9];
+			for(i=0;i<3;i++){
+				*(ui8WritePtr++) = *(ui8ReadPtr++);
+			}
+			BSP_LCD_DisplayStringAt(0, 24, (uint8_t*) &xValArray[0], CENTER_MODE);
+			BSP_LCD_DisplayStringAt(0, 36, (uint8_t*) &yValArray[0], CENTER_MODE);
+
+			//	Dealt with
+			boDisplayTouch = false;
+		}
 	}
 }
 

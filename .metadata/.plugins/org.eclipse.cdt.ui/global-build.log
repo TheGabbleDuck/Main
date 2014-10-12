@@ -1,4 +1,4 @@
-13:54:22 **** Incremental Build of configuration Debug for project 429DiscoveryLCD ****
+15:53:15 **** Incremental Build of configuration Debug for project 429DiscoveryLCD ****
 make -j8 all 
 'Building file: ../src/main.c'
 'Invoking: Cross ARM C Compiler'
@@ -15,16 +15,16 @@ arm-none-eabi-objcopy -O ihex "429DiscoveryLCD.elf"  "429DiscoveryLCD.hex"
 'Invoking: Cross ARM GNU Print Size'
 arm-none-eabi-size --format=berkeley "429DiscoveryLCD.elf"
    text	   data	    bss	    dec	    hex	filename
-  34520	    100	    852	  35472	   8a90	429DiscoveryLCD.elf
-'Finished building: 429DiscoveryLCD.siz'
+  44884	    184	   1040	  46108	   b41c	429DiscoveryLCD.elf
 'Finished building: 429DiscoveryLCD.hex'
+'Finished building: 429DiscoveryLCD.siz'
 ' '
 ' '
-13:54:30 **** Incremental Build of configuration Debug for project 429DiscoveryLCD ****
+15:53:21 **** Incremental Build of configuration Debug for project 429DiscoveryLCD ****
 make -j8 all 
 'Invoking: Cross ARM GNU Print Size'
 arm-none-eabi-size --format=berkeley "429DiscoveryLCD.elf"
    text	   data	    bss	    dec	    hex	filename
-  34520	    100	    852	  35472	   8a90	429DiscoveryLCD.elf
+  44884	    184	   1040	  46108	   b41c	429DiscoveryLCD.elf
 'Finished building: 429DiscoveryLCD.siz'
 ' '
